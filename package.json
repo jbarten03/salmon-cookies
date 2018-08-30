@@ -1,0 +1,29 @@
+{
+  "name": "salmon-cookies",
+  "version": "1.0.0",
+  "description": "Pat's Pet Bakeryt",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbarten03/salmon-cookies.git"
+  },
+  "keywords": [
+    "kitten",
+    "puppy",
+    "dog",
+    "cat",
+    "food",
+    "treats",
+    "seattle"
+  ],
+  "author": "Joe Barten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbarten03/salmon-cookies/issues"
+  },
+  "homepage": "https://github.com/jbarten03/salmon-cookies#readme"
+}
