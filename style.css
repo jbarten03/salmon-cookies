@@ -1,0 +1,57 @@
+body{
+    background-color:black;
+}
+
+#container {
+    width: 90%;
+    background-color:white
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Comfortaa', cursive;
+   
+}  
+   
+ h1 {
+    float: left;
+}
+
+#search {
+    float: left;
+    padding: 1.5em;
+}
+
+#search.input {
+    padding: 0.5em; 
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#navigation {
+    background-color: greenyellow;
+}
+
+
+#navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navigation li {
+    float: left;
+}
+
+#navigation li {
+    float: left;
+    padding: 10px 20px;
+    border-right: 1px solid black;
+}
+
+#navigation li:hover {
+    background-color: white;
+    cursor: pointer;
+}

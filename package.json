@@ -25,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/jbarten03/salmon-cookies/issues"
   },
-  "homepage": "https://github.com/jbarten03/salmon-cookies#readme"
+  "homepage": "https://github.com/jbarten03/salmon-cookies#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "normalize.css": "^8.0.0"
+  }
 }
