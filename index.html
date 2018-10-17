@@ -8,15 +8,25 @@
     <link href="normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton|Comfortaa" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+
+    <script id="product-template" type="text/handlebars-v4">
+        <li class="product" data-brand="{{brand}}" data-categories="{{categories}}" data-id="{{product_id}}">
+            <img src="images/{{image}}" alt="{{title}}">
+            <h4>{{title}}</h4>
+            <p>{{price}}</p>
+            <a href="#" class="button">Learn more</a>
+        </li>
+    </script>
+
 </head>
 <body>
     <div id="container">   
         <header>
-            <div id="logo-search"class="clearfix">
+            <div id="logo-search" class="clearfix">
                 <h1>Football Apperal</h1>
                 <form id="search">
-                    <input type="text" placeholder="Search">
-                    <input type="button" value="Go">
+                    <input type="search" id="lookup" placeholder="Search">
+                    <input type="submit" value="Go">
                 </form>
             </div>
             <div id="navigation" class="clearfix">
@@ -26,13 +36,65 @@
                 <li>Kids</li>
                 <li>Deals</li>
                 <li>Sale</li>
-                
-                 </ul>  
+                </ul>  
+       
             </div>
-            <div id="promotions">
-
+            <div id="promotions" class="clearfix">                
+                <span class="arrow">&lt;</span>
+                <span class="promo">Free Shipping on orders $50 and above using promo code SHIP50</span>
+                <span class="arrow">&gt;</span>
+            </div>    
+        </header>
+        <main>
+            <aside>
+                <h3>Categories</h3>
+                <select id="category-filter">
+                    <option value="">--filter by Categories--</option>
+                </select>
+                <hr>
+                <h3>Brands</h3>
+                <select id="brand-filter">
+                    <option value="">--filter by Brands--</option>
+                </select>
+                <hr>
+                <h3>Materials</h3>
+                <select id="category-filter">
+                    <option value="">--filter by Materials--</option>
+                </select>
+                <hr>
+                <h3>Colors</h3>
+                <select id="category-filter">
+                    <option value="">--filter by Colors--</option>
+                </select>
+                <hr>
+                <h3>Sizes</h3>
+                <select id="category-filter">
+                    <option value="">--filter by Sizes--</option>
+                </select>
+                <hr>
+            </aside>
         
-    
+            <section>
+                <h3>Top Products</h3>
+                <ul id="product-listings">
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>copyright &copy; 2018 - Football Apparel</p>
+        </footer>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/handlebars-v4.0.12.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/products-constructor.js"></script>
+    <script src="js/brand-filter.js"></script>
+    <script src="js/category-filter.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
+
+
 
 
 
